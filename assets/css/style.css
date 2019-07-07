@@ -1,8 +1,8 @@
-
-#container1{
-    height: 100px;
-    width:100px;
-    background-color:transparent;
-    position: absolute;
-    float: left;
+#header {
+    color:white;
+}
+#startBtn{
+    width:200px;
+    height:50px;
+    padding:10px;
 }
