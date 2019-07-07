@@ -1,8 +1,23 @@
 #header {
     color:white;
+    font-size:36px;
+    padding:20px;
+    font-family: 'Mountains of Christmas', cursive;
 }
-#startBtn{
-    width:200px;
-    height:50px;
-    padding:10px;
+button{
+    padding:20px;
+    border:10px;
+    margin:20px;
+}
+#rules{
+    color:white;
+    font-size:28px;
+    padding:15px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+p{
+    font-family: 'Mountains of Christmas', cursive;
+    font-size:28px;
+    color:white;
+
 }
