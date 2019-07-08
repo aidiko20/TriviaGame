@@ -9,15 +9,22 @@ button{
     border:10px;
     margin:20px;
 }
-#rules{
+.scores {
     color:white;
     font-size:28px;
     padding:15px;
     font-family: 'Mountains of Christmas', cursive;
 }
-p{
-    font-family: 'Mountains of Christmas', cursive;
-    font-size:28px;
+#rules {
     color:white;
-
+    font-size:28px;
+    padding:15px;
+    font-family: 'Mountains of Christmas', cursive;
+}
+#myGame{
+    font-family:'Mountains of Christmas', cursive;
+    font-size:20px;
+    color:white;
+    background-color:transparent;
+    float:initial;
 }

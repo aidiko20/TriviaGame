@@ -7,107 +7,125 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Harry Potter Trivia</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap" rel="stylesheet">
 </head>
 <header>
     <div id="header">
         <h1>HARRY POTTER TRIVIA </h1>
     </div>
-    
+
 
 </header>
 
 <body style="background-image:url('assets/images/liSX9D5.jpg');">
     <div id="rules">
         <p> Your are given 1 minute to answer all 10 questions in this trivia.</p>
+    <button onclick="onTimer()">Start the Game</button>
+    <div id="myGame">
+        
+    <div id="timer"> <p>Time remaining:</p> </div>
+            <p>Correct Answers:</p>
+            <p>Wrong Answers:</p>
+        </div>
+            <p class="question">1. What house does Harry belong to?</p>
+            <ul class="anwer">
+                <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">RAVENCLAW</label>
+                <input type="radio" name="q1" value="b" id="q1b"><label for="q1b">SLYTHERIN</label>
+                <input type="radio" name="q1" value="c" id="q1c"><label for="q1c">HUFFLEPUFF</label>
+                <input type="radio" name="q1" value="d" id="q1d"><label for="q1d">GRYFFINDOR</label>
+            </ul>
+            <p class="question">2. What does the Marauder's Map show?</p>
+            <ul class="anwer">
+                <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">HIDDEN TREASURE</label>
+                <input type="radio" name="q2" value="b" id="q2b"><label for="q2b">ROOM OF REQUIREMENT</label>
+                <input type="radio" name="q2" value="c" id="q2c"><label for="q2c">THE LOACTION OF EVERYONE AT
+                    HOGWARTS</label>
+                <input type="radio" name="q2" value="d" id="q2d"><label for="q2d">THE PASSWORD TO DUMBLEDORE'S
+                    OFFICE</label>
+            </ul>
+            <p class="question">3. How did Hermione take extra lessons her third year?</p>
+            <ul class="anwer">
+                <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">THE TIME-TURNER</label>
+                <input type="radio" name="q3" value="b" id="q3b"><label for="q3b">WEEKEND CLASSES</label>
+                <input type="radio" name="q3" value="c" id="q3c"><label for="q3c">SHE MADE A CLONE</label>
+                <input type="radio" name="q3" value="d" id="q3d"><label for="q3d">THE PENSIEVE</label>
+            </ul>
+            <p class="question">4. What is Harry's Patronus ?</p>
+            <ul class="anwer">
+                <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">A RABBIT</label>
+                <input type="radio" name="q4" value="b" id="q4b"><label for="q4b">A UNICORN</label>
+                <input type="radio" name="q4" value="c" id="q4c"><label for="q4c">A STAG</label>
+                <input type="radio" name="q4" value="d" id="q4d"><label for="q4d">AN OWL</label>
+            </ul>
+            <p class="question">5. How is Dobby freed from serving the Malfoy's?</p>
+            <ul class="anwer">
+                <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A PAIR OF PANTS</label>
+                <input type="radio" name="q5" value="b" id="q5b"><label for="q5b">A POTION</label>
+                <input type="radio" name="q5" value="c" id="q5c"><label for="q5c">A SPELL</label>
+                <input type="radio" name="q5" value="d" id="q5d"><label for="q5d">A SOCK</label>
+            </ul>
+            <p class="question">6. What type of dragon did Harry face in his first Tri-Wizard Tournament task?</p>
+            <ul class="anwer">
+                <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">A COMMON WELSH GREEN</label>
+                <input type="radio" name="q6" value="b" id="q6b"><label for="q6b">A HUNGARIAN HORNTAIL</label>
+                <input type="radio" name="q6" value="c" id="q6c"><label for="q6c">A CHINESE FIREBALL</label>
+                <input type="radio" name="q6" value="d" id="q6d"><label for="q6d">A SWIDISH SHORT-SNOUT</label>
+            </ul>
+            <p class="question">7. What makes a person feel better after seeing a Dementor?</p>
+            <ul class="anwer">
+                <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">CHICKEN SOUP</label>
+                <input type="radio" name="q7" value="b" id="q7b"><label for="q7b">TREACLE PUDDING</label>
+                <input type="radio" name="q7" value="c" id="q7c"><label for="q7c">A NAP</label>
+                <input type="radio" name="q7" value="d" id="q7d"><label for="q7d">CHOCOLATE</label>
+            </ul>
+            <p class="question">8. What does Felix Felicis do?</p>
+            <ul class="anwer">
+                <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">POISONS YOU</label>
+                <input type="radio" name="q8" value="b" id="q8b"><label for="q8b">GIVES GOOD LUCK</label>
+                <input type="radio" name="q8" value="c" id="q8c"><label for="q8c">MAKES YOU FALL IN LOVE</label>
+                <input type="radio" name="q8" value="d" id="q8d"><label for="q8d">BRINGS SOMEONE BACK FROM THE
+                    DEAD</label>
+            </ul>
+            <p class="question">9. Who is the half-blood prince?</p>
+            <ul class="anwer">
+                <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">LUCIUS MALFOY</label>
+                <input type="radio" name="q9" value="b" id="q9b"><label for="q9b">EILEEN PRINCE</label>
+                <input type="radio" name="q9" value="c" id="q9c"><label for="q9c">TOM RIDDLE</label>
+                <input type="radio" name="q9" value="d" id="q9d"><label for="q9d">SEVERUS SNAPE</label>
+            </ul>
+            <p class="question">10. Which character became a professional Quidditch player?</p>
+            <ul class="anwer">
+                <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">GINNY</label>
+                <input type="radio" name="q10" value="b" id="q10b"><label for="q10b">HARRY</label>
+                <input type="radio" name="q10" value="c" id="q10c"><label for="q10c">RON</label>
+                <input type="radio" name="q10" value="d" id="q10d"><label for="q10d">HERMIONE</label>
+            </ul>
+            </p>
+        
+        <button type="button" id="submit">Submit</button>
+        <button onclick="myFunction()">Play Again</button></div>
+    <div id="myGame">
+        </section>
     </div>
-    <button type="button" class="btn btn-light primary btn-lg">START THE GAME</button>
-    <div class="scores">
-    <p>Time remaining:</p>
-    <p>Correct Answers</p>
-    <p>Wrong Answers</p>
-    </div>
-<div class="gameContainer">
-    <p class="question">1. What house does Harry belong to?</p>
-    <ul class="anwer">
-            <input type="radio" name="q1" value="a" id="q1a"><label for="q1a">RAVENCLAW</label><br/>
-			<input type="radio" name="q1" value="b" id="q1b"><label for="q1b">SLYTHERIN</label><br/>
-			<input type="radio" name="q1" value="c" id="q1c"><label for="q1c">HUFFLEPUFF</label><br/>
-			<input type="radio" name="q1" value="d" id="q1d"><label for="q1d">GRYFFINDOR</label><br/>
-			</ul>
-    <p class="question">2. What does the Marauder's Map show?</p>
-    <ul class="anwer">
-            <input type="radio" name="q2" value="a" id="q2a"><label for="q2a">HIDDEN TREASURE</label><br/>
-			<input type="radio" name="q2" value="b" id="q2b"><label for="q2b">ROOM OF REQUIREMENT</label><br/>
-			<input type="radio" name="q2" value="c" id="q2c"><label for="q2c">THE LOACTION OF EVERYONE AT HOGWARTS</label><br/>
-			<input type="radio" name="q2" value="d" id="q2d"><label for="q2d">THE PASSWORD TO DUMBLEDORE'S OFFICE</label><br/>
-			</ul>
-    <p class="question">3. How did Hermione take extra lessons her third year?</p>
-    <ul class="anwer">
-            <input type="radio" name="q3" value="a" id="q3a"><label for="q3a">THE TIME-TURNER</label><br/>
-			<input type="radio" name="q3" value="b" id="q3b"><label for="q3b">WEEKEND CLASSES</label><br/>
-			<input type="radio" name="q3" value="c" id="q3c"><label for="q3c">SHE MADE A CLONE</label><br/>
-			<input type="radio" name="q3" value="d" id="q3d"><label for="q3d">THE PENSIEVE</label><br/>
-			</ul>
-    <p class="question">4. What is Harry's Patronus ?</p>
-    <ul class="anwer">
-            <input type="radio" name="q4" value="a" id="q4a"><label for="q4a">A RABBIT</label><br/>
-			<input type="radio" name="q4" value="b" id="q4b"><label for="q4b">A UNICORN</label><br/>
-			<input type="radio" name="q4" value="c" id="q4c"><label for="q4c">A STAG</label><br/>
-			<input type="radio" name="q4" value="d" id="q4d"><label for="q4d">AN OWL</label><br/>
-			</ul>
-    <p class="question">5. How is Dobby freed from serving the Malfoy's?</p>
-    <ul class="anwer">
-            <input type="radio" name="q5" value="a" id="q5a"><label for="q5a">A PAIR OF PANTS</label><br/>
-			<input type="radio" name="q5" value="b" id="q5b"><label for="q5b">A POTION</label><br/>
-			<input type="radio" name="q5" value="c" id="q5c"><label for="q5c">A SPELL</label><br/>
-			<input type="radio" name="q5" value="d" id="q5d"><label for="q5d">A SOCK</label><br/>
-			</ul>
-    <p class="question">6. What type of dragon did Harry face in his first Tri-Wizard Tournament task?</p>
-    <ul class="anwer">
-            <input type="radio" name="q6" value="a" id="q6a"><label for="q6a">A COMMON WELSH GREEN</label><br/>
-			<input type="radio" name="q6" value="b" id="q6b"><label for="q6b">A HUNGARIAN HORNTAIL</label><br/>
-			<input type="radio" name="q6" value="c" id="q6c"><label for="q6c">A CHINESE FIREBALL</label><br/>
-			<input type="radio" name="q6" value="d" id="q6d"><label for="q6d">A SWIDISH SHORT-SNOUT</label><br/>
-			</ul>
-    <p class="question">7. What makes a person feel better after seeing a Dementor?</p>
-    <ul class="anwer">
-            <input type="radio" name="q7" value="a" id="q7a"><label for="q7a">CHICKEN SOUP</label><br/>
-			<input type="radio" name="q7" value="b" id="q7b"><label for="q7b">TREACLE PUDDING</label><br/>
-			<input type="radio" name="q7" value="c" id="q7c"><label for="q7c">A NAP</label><br/>
-			<input type="radio" name="q7" value="d" id="q7d"><label for="q7d">CHOCOLATE</label><br/>
-			</ul>
-    <p class="question">8. What does Felix Felicis do?</p>
-    <ul class="anwer">
-            <input type="radio" name="q8" value="a" id="q8a"><label for="q8a">POISONS YOU</label><br/>
-			<input type="radio" name="q8" value="b" id="q8b"><label for="q8b">GIVES GOOD LUCK</label><br/>
-			<input type="radio" name="q8" value="c" id="q8c"><label for="q8c">MAKES YOU FALL IN LOVE</label><br/>
-			<input type="radio" name="q8" value="d" id="q8d"><label for="q8d">BRINGS SOMEONE BACK FROM THE DEAD</label><br/>
-			</ul>
-    <p class="question">9. Who is the half-blood prince?</p>
-    <ul class="anwer">
-            <input type="radio" name="q9" value="a" id="q9a"><label for="q9a">LUCIUS MALFOY</label><br/>
-			<input type="radio" name="q9" value="b" id="q9b"><label for="q9b">EILEEN PRINCE</label><br/>
-			<input type="radio" name="q9" value="c" id="q9c"><label for="q9c">TOM RIDDLE</label><br/>
-			<input type="radio" name="q9" value="d" id="q9d"><label for="q9d">SEVERUS SNAPE</label><br/>
-			</ul>
-    <p class="question">10. Which character became a professional Quidditch player?</p>
-    <ul class="anwer">
-            <input type="radio" name="q10" value="a" id="q10a"><label for="q10a">GINNY</label><br/>
-			<input type="radio" name="q10" value="b" id="q10b"><label for="q10b">HARRY</label><br/>
-			<input type="radio" name="q10" value="c" id="q10c"><label for="q10c">RON</label><br/>
-			<input type="radio" name="q10" value="d" id="q10d"><label for="q10d">HERMIONE</label><br/>
-			</ul>
-
-    </p>
 </div>
-
-
-    
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</div>
+    <footer id="footer">
+        <div class="container">
+            &copy; Copyright
+        </div>
+    </foote>
+        <script src="assets/javascript/app.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
 </body>
 
 </html>
