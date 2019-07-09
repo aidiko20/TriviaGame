@@ -21,10 +21,14 @@ button{
     padding:15px;
     font-family: 'Mountains of Christmas', cursive;
 }
-#myGame{
+#questionaire{
     font-family:'Mountains of Christmas', cursive;
     font-size:20px;
     color:white;
     background-color:transparent;
     float:initial;
+}
+#score-submit{
+    visibility: hidden;
+
 }
