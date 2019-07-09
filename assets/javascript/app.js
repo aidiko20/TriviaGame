@@ -1,57 +1,84 @@
 function check(){
-  var question1 = document.questionaire.q1.value;
-  var question2 = document.questionaire.q2.value;
-  var question3 = document.questionaire.q3.value;
-  var question4 = document.questionaire.q4.value;
-  var question5 = document.questionaire.q5.value;
-  var question6 = document.questionaire.q6.value;
-  var question7 = document.questionaire.q7.value;
-  var question8 = document.questionaire.q8.value;
-  var question9 = document.questionaire.q9.value;
-  var question10 = document.questionaire.q10.value;
-  var correct =0;
-  if (question1 == "d") {
+  var q1 = document.questionaire.q1.value;
+  var q2 = document.questionaire.q2.value;
+  var q3 = document.questionaire.q3.value;
+  var q4 = document.questionaire.q4.value;
+  var q5 = document.questionaire.q5.value;
+  var q6 = document.questionaire.q6.value;
+  var q7 = document.questionaire.q7.value;
+  var q8 = document.questionaire.q8.value;
+  var q9 = document.questionaire.q9.value;
+  var q10 = document.questionaire.q10.value;
+  var correct = 0;
+  var messages = ["Outstanding", "Acceptable", "Poor", "Troll"];
+  var pics = ["assets/images/tenor.gif", "assets/images/acceptable.gif", "assets/images/poor.gif", "assets/images/troll.gif"];
+
+  var score;
+  if (correct > 8) {
+    score = 0;
+  }
+  if (correct < 8 && correct > 6) {
+    score = 1;
+  }
+  if (correct < 6 && correct > 3) {
+    score = 2;
+  }
+  if (correct < 3) {
+    score = 3;
+  }
+   
+  if (q1 == "d") {
     correct++;
   }
-  if (question2 == "c") {
+  if (q2 == "c") {
     correct++;
   }
-  if (question3 == "a") {
+  if (q3 == "a") {
     correct++;
   }
-  if (question4 == "c") {
+  if (q4 == "c") {
     correct++;
   }
-  if (question5 == "d") {
+  if (q5 == "d") {
     correct++;
   }
-  if (question6 == "b") {
+  if (q6 == "b") {
     correct++;
   }
-  if (question7 == "d") {
+  if (q7 == "d") {
     correct++;
   }
-  if (question8 == "b") {
+  if (q8 == "b") {
     correct++;
   }
-  if (question9 == "d") {
+  if (q9 == "d") {
     correct++;
   }
-  if (question10 == "a") {
+  if (q10 == "a") {
     correct++;
   }
 
   document.getElementById("score-submit").style.visibility = "visible";
-  document.getElementById("correct-numbers").innerHTML = "You got" + correct + "correct.";
+  document.getElementById("message").innerHTML = messages[score];
+  document.getElementById("correct-answers").innerHTML = "You got " + correct + " correct answers out of 10 questions.";
+  document.getElementById("pic").src = pics[score];
+    document.getElementById("form").style.visibility = "hidden";
+    document.getElementById("reset-btn").onclick = function() {
+      restartplay()
+   };
 }
 i = 60;
 function onTimer() {
-  document.getElementById('timer').innerHTML = i;
+  document.getElementById('timer').innerHTML = "TIME REMAINING: " + i;
   i--;
   if (i < 0) {
-    alert('You lose!');
+    alert('Time is Up!');
   }
   else {
     setTimeout(onTimer, 1000);
   }
 }
+document.getElementById("#start-btn-wrapper").onclick = function(){
+startplay()
+}
+
