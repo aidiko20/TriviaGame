@@ -19,104 +19,106 @@
 
 </header>
 
-<body style="background-image:url('assets/images/liSX9D5.jpg');">
-    <div id="rules">
-        <p> Your are given 60 seconds to answer all 10 questions in this trivia.</p>
-    </div>
+<body>
+    <img src="assets/images/liSX9D5.jpg" class="bg">
+    <div class="wholeContent">
+        <div id="rules">
+            <p> Your are given 60 seconds to answer all 10 questions in this trivia.</p>
+        </div>
 
-    
-    <form id="questionaire" name="questionaire">
+
+        <form id="questionaire" name="questionaire">
             <input id="start-btn-wrapper" type="button" value="start" onclick="onTimer()">
 
-        <div id="timer">
-            <p>TIME REMAINING:</p>
-        </div>
-        </br>
+            <div id="timer">
+                <p>TIME REMAINING:</p>
+            </div>
+            </br>
+            <div class="qaContent">
+                <p>1. WHAT HOUSE DOES HARRY BELONG TO? </p>
+                <input type="radio" id="q1a" name="q1" value="a">RAVENCLAW</br>
+                <input type="radio" id="q1b" name="q1" value="b">SLYTHERIN</br>
+                <input type="radio" id="q1c" name="q1" value="c">HUFFLEPUFF</br>
+                <input type="radio" id="q1d" name="q1" value="d">GRYFFINFOR</br>
 
-        <p>1. WHAT HOUSE DOES HARRY BELONG TO?</p>
-        <input type="radio" id="q1a" name="q1" value="a">RAVENCLAW</br>
-        <input type="radio" id="q1b" name="q1" value="b">SLYTHERIN</br>
-        <input type="radio" id="q1c" name="q1" value="c">HUFFLEPUFF</br>
-        <input type="radio" id="q1d" name="q1" value="d">GRYFFINFOR</br>
+                </br>
 
-        </br>
+                <p>2. WHAT DOES MARAUDER'S MAP SHOW?</p>
+                <input type="radio" id="q2a" name="q2" value="a">HIDDEN TREASURE</br>
+                <input type="radio" id="q2b" name="q2" value="b">ROOM OF REQUIREMENT</br>
+                <input type="radio" id="q2c" name="q2" value="c">THE LOCATION OF EVERYONE AT HOGWARTS</br>
+                <input type="radio" id="q2d" name="q2" value="d">THE PASSWORD TO DUMBLEDORE'S OFFICE</br>
 
-        <p>2. WHAT DOES MARAUDER'S MAP SHOW?</p>
-        <input type="radio" id="q2a" name="q2" value="a">HIDDEN TREASURE</br>
-        <input type="radio" id="q2b" name="q2" value="b">ROOM OF REQUIREMENT</br>
-        <input type="radio" id="q2c" name="q2" value="c">THE LOCATION OF EVERYONE AT HOGWARTS</br>
-        <input type="radio" id="q2d" name="q2" value="d">THE PASSWORD TO DUMBLEDORE'S OFFICE</br>
+                </br>
+                <p>3. HOW DID HERMIONE TAKE EXTRA CLASSES IN THIRD YEAR?</p>
+                <input type="radio" id="q3a" name="q3" value="a">THE TIME TIME-TURNER</br>
+                <input type="radio" id="q3b" name="q3" value="b">WEEKEND CLASSES</br>
+                <input type="radio" id="q3c" name="q3" value="c">SHE MADE A CLONE</br>
+                <input type="radio" id="q3d" name="q3" value="d">THE PENSIVE</br>
 
-        </br>
-        <p>3. HOW DID HERMIONE TAKE EXTRA CLASSES IN THIRD YEAR?</p>
-        <input type="radio" id="q3a" name="q3" value="a">THE TIME TIME-TURNER</br>
-        <input type="radio" id="q3b" name="q3" value="b">WEEKEND CLASSES</br>
-        <input type="radio" id="q3c" name="q3" value="c">SHE MADE A CLONE</br>
-        <input type="radio" id="q3d" name="q3" value="d">THE PENSIVE</br>
+                </br>
+                <p>4. WHAT IS HARRY'S PATRONUS ?</p>
+                <input type="radio" id="q4a" name="q4" value="a">A RABBIT</br>
+                <input type="radio" id="q4b" name="q4" value="b">A UNICORN</br>
+                <input type="radio" id="q4c" name="q4" value="c">A STAG</br>
+                <input type="radio" id="q4d" name="q4" value="d">AN OWL</br>
 
-        </br>
-        <p>4. WHAT IS HARRY'S PATRONUS ?</p>
-        <input type="radio" id="q4a" name="q4" value="a">A RABBIT</br>
-        <input type="radio" id="q4b" name="q4" value="b">A UNICORN</br>
-        <input type="radio" id="q4c" name="q4" value="c">A STAG</br>
-        <input type="radio" id="q4d" name="q4" value="d">AN OWL</br>
+                </br>
 
-        </br>
+                <p>5. HOW IS DOBBY FREED FROM THE MALFOY'S?</p>
+                <input type="radio" id="q5a" name="q5" value="a">A PAIR OF PANTS</br>
+                <input type="radio" id="q5b" name="q5" value="b">A POTION</br>
+                <input type="radio" id="q5c" name="q5" value="c">A SPELL</br>
+                <input type="radio" id="q5d" name="q5" value="d">A SOCK</br>
 
-        <p>5. HOW IS DOBBY FREED FROM THE MALFOY'S?</p>
-        <input type="radio" id="q5a" name="q5" value="a">A PAIR OF PANTS</br>
-        <input type="radio" id="q5b" name="q5" value="b">A POTION</br>
-        <input type="radio" id="q5c" name="q5" value="c">A SPELL</br>
-        <input type="radio" id="q5d" name="q5" value="d">A SOCK</br>
+                </br>
 
-        </br>
+                <p>6. WHAT TIPE OF DRAGON DID HARRY FACE IN HIS FIRST TRI-WIZARD TOURNAMENT TASK?</p>
+                <input type="radio" id="q6a" name="q6" value="a">A COMMON WELSH GREEN</br>
+                <input type="radio" id="q6b" name="q6" value="b">A HUNGARIAN HORNTAIL</br>
+                <input type="radio" id="q6c" name="q6" value="c">A CHINESE FIREBALL</br>
+                <input type="radio" id="q6d" name="q6" value="d">A SWIDISH SHORT-SNOUT</br>
 
-        <p>6. WHAT TIPE OF DRAGON DID HARRY FACE IN HIS FIRST TRI-WIZARD TOURNAMENT TASK?</p>
-        <input type="radio" id="q6a" name="q6" value="a">A COMMON WELSH GREEN</br>
-        <input type="radio" id="q6b" name="q6" value="b">A HUNGARIAN HORNTAIL</br>
-        <input type="radio" id="q6c" name="q6" value="c">A CHINESE FIREBALL</br>
-        <input type="radio" id="q6d" name="q6" value="d">A SWIDISH SHORT-SNOUT</br>
+                </br>
 
-        </br>
+                <p>7. WHAT MAKES A PERSON FEEL BETTER AFTER SEEING A DEMENTOR?</p>
+                <input type="radio" id="q7a" name="q7" value="a">CHICKEN SOUP</br>
+                <input type="radio" id="q7b" name="q7" value="b">TREACLE PUDDING</br>
+                <input type="radio" id="q7c" name="q7" value="c">A NAP</br>
+                <input type="radio" id="q7d" name="q7" value="d">CHOCOLATE</br>
 
-        <p>7. WHAT MAKES A PERSON FEEL BETTER AFTER SEEING A DEMENTOR?</p>
-        <input type="radio" id="q7a" name="q7" value="a">CHICKEN SOUP</br>
-        <input type="radio" id="q7b" name="q7" value="b">TREACLE PUDDING</br>
-        <input type="radio" id="q7c" name="q7" value="c">A NAP</br>
-        <input type="radio" id="q7d" name="q7" value="d">CHOCOLATE</br>
+                </br>
 
-        </br>
+                <p>8. WHAT DOES FELIX FELICIS DO?</p>
+                <input type="radio" id="q8a" name="q8" value="a">POISONS YOU</br>
+                <input type="radio" id="q8b" name="q8" value="b">GIVES GOOD LUCK</br>
+                <input type="radio" id="q8c" name="q8" value="c">MAKES YOU FALL IN LOVE</br>
+                <input type="radio" id="q8d" name="q8" value="d">BRINGS SOMEONE BACK FROM THE DEAD</br>
 
-        <p>8. WHAT DOES FELIX FELICIS DO?</p>
-        <input type="radio" id="q8a" name="q8" value="a">POISONS YOU</br>
-        <input type="radio" id="q8b" name="q8" value="b">GIVES GOOD LUCK</br>
-        <input type="radio" id="q8c" name="q8" value="c">MAKES YOU FALL IN LOVE</br>
-        <input type="radio" id="q8d" name="q8" value="d">BRINGS SOMEONE BACK FROM THE DEAD</br>
+                </br>
 
-        </br>
+                <p>9. WHO IS THE HALF-BLOOD PRINCE?</p>
+                <input type="radio" id="q9a" name="q9" value="a">LUCIUS MALFOY</br>
+                <input type="radio" id="q9b" name="q9" value="b">EILEEN PRINCE</br>
+                <input type="radio" id="q9c" name="q9" value="c">TOM RIDDLE</br>
+                <input type="radio" id="q9d" name="q9" value="d">SEVERUS SNAPE</br>
 
-        <p>9. WHO IS THE HALF-BLOOD PRINCE?</p>
-        <input type="radio" id="q9a" name="q9" value="a">LUCIUS MALFOY</br>
-        <input type="radio" id="q9b" name="q9" value="b">EILEEN PRINCE</br>
-        <input type="radio" id="q9c" name="q9" value="c">TOM RIDDLE</br>
-        <input type="radio" id="q9d" name="q9" value="d">SEVERUS SNAPE</br>
+                </br>
 
-        </br>
+                <p>10. WHICH CHARACTER BECAME A PROFESSIONAL QUIDDITCH PLAYER?</p>
+                <input type="radio" id="q10a" name="q10" value="a">GINNY</br>
+                <input type="radio" id="q10b" name="q10" value="b">HARRY</br>
+                <input type="radio" id="q1Oc" name="q10" value="c">RON</br>
+                <input type="radio" id="q10d" name="q10" value="d">HERMIONE</br>
 
-        <p>10. WHICH CHARACTER BECAME A PROFESSIONAL QUIDDITCH PLAYER?</p>
-        <input type="radio" id="q10a" name="q10" value="a">GINNY</br>
-        <input type="radio" id="q10b" name="q10" value="b">HARRY</br>
-        <input type="radio" id="q1Oc" name="q10" value="c">RON</br>
-        <input type="radio" id="q10d" name="q10" value="d">HERMIONE</br>
-
-        </br>
-        </p>
-
-        <input id="submit-btn" type="button" value="Submit" onclick="check();">
-        <input id="reset-btn" type="button" value="Play Again" onclick="restartplay();">
-        </div>
-        <div id="myGame">
-        </div>
+                </br>
+                </p>
+            </div>
+            <input id="submit-btn" type="button" value="Submit" onclick="check();">
+            <input id="reset-btn" type="button" value="Play Again" onclick="restartplay();">
+    </div>
+    <div id="myGame">
+    </div>
     </form>
     <div id="score-submit">
         <p id="message"></p>
@@ -127,17 +129,19 @@
         <div class="container">
             &copy; Copyright
         </div>
-        </foote>
-        <script src="assets/javascript/app.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
+
+    </footer>
+    </div>
+    <script src="assets/javascript/app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
